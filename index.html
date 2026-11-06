@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dal Mattino: Café und Gelateria in Luzern</title>
+<meta name="description" content="Dal Mattino, Café und Gelateria in Luzern. Original Crookies, cremiger Cappuccino und Lulo-Gelato an der Hirschmattstrasse 28, jeden Morgen ab 7 Uhr.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#menu" data-i18n="skip">Zum Angebot springen</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-nav" id="top">
+  <a class="wordmark" href="#top" aria-label="Dal Mattino">
+    <span class="wordmark-main">Dal Mattino</span>
+    <span class="wordmark-sub" data-i18n="wordmarkSub">Café und Gelateria · Luzern</span>
+  </a>
+  <nav class="nav-links" aria-label="Hauptnavigation">
+    <a href="#signatures" data-i18n="navSig">Highlights</a>
+    <a href="#menu" data-i18n="navMenu">Angebot</a>
+    <a href="#story" data-i18n="navStory">Unsere Geschichte</a>
+    <a href="#morning" data-i18n="navMorning">Am Morgen</a>
+    <a href="#visit" data-i18n="navVisit">Besuch</a>
+  </nav>
+  <div class="nav-actions">
+    <div class="lang-toggle" role="group" aria-label="Language / Sprache">
+      <button type="button" class="lang-btn is-active" data-lang="de" aria-pressed="true">DE</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn btn-nav" href="tel:+41786689999">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>+41 78 668 99 99</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Dal Mattino">
+  <div class="hero-media" aria-hidden="true">
+    <img class="hero-img" id="heroImg" src="assets/hero-morning-window.webp" alt="" width="1920" height="1280" fetchpriority="high">
+    <div class="hero-shade"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badges reveal">
+      <span class="badge badge-rating">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span data-i18n="badgeRating">4.9 · über 350 Google-Bewertungen</span>
+      </span>
+      <span class="badge badge-kind">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <span data-i18n="badgeKind">Café und Gelateria am Morgen</span>
+      </span>
+    </div>
+    <h1 class="hero-title">
+      <span class="line reveal" data-i18n="h1a">Guten Morgen,</span>
+      <span class="line reveal"><span data-i18n="h1b">Luzern</span><span class="title-dot">.</span></span>
+    </h1>
+    <p class="hero-rotate reveal" aria-live="off">
+      <span data-i18n="heroRotatePrefix">Frisch aus dem Fenster:</span>
+      <span class="rotate-word" id="rotateWord">Crookies</span><span data-i18n="heroRotateSuffix">, jeden Morgen.</span>
+    </p>
+    <p class="hero-lede reveal" data-i18n="heroLede">Ein kleines Kaffee- und Gebäckfenster an der Hirschmattstrasse: cremiger Cappuccino, die originalen Crookies und Gelato, persönlich serviert von Inhaber Elias, jeden Morgen ab 7 Uhr.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+        <span data-i18n="ctaMenu">Angebot ansehen</span>
+      </a>
+      <a class="btn btn-ghost" href="tel:+41786689999">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span data-i18n="ctaCall">Anrufen</span>
+      </a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/dalmattino" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+    <p class="hero-note reveal" data-i18n="heroNote">Klein, persönlich, nur am Morgen: Alles gibt es auch zum Mitnehmen.</p>
+    <div class="hero-facts reveal">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Hirschmattstrasse 28, 6003 Luzern
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span data-i18n="heroFactHours">Mo bis Fr 7 bis 14 Uhr, Sa 8 bis 14 Uhr, So geschlossen</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUN DIVIDER ============ -->
+<div class="sunrow" aria-hidden="true">
+  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
+
+<!-- ============ SIGNATURES ============ -->
+<section class="section section-cream" id="signatures">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="sigTitle">Wofür unsere Gäste wiederkommen</h2>
+      <p class="section-sub" data-i18n="sigSub">Vier Dinge, die in den Bewertungen immer wieder auftauchen: die originalen Crookies, der cremige Cappuccino, ein ganz besonderes Gelato und die herzhaften Empanadas.</p>
+    </header>
+    <div class="sig-grid">
+      <article class="sig-card reveal">
+        <div class="sig-media"><img src="assets/crookies-signature.webp" alt="Crookies auf einem Teller, zwei ganze und ein aufgebrochener, der die Blätterteigschichten und Schokoladenstücke im Inneren zeigt" width="1408" height="1760" loading="lazy"></div>
+        <div class="sig-body">
+          <div class="sig-tags"><span class="tag tag-orig" data-i18n="tagOriginal">Das Original</span></div>
+          <h3 data-i18n="sig1Name">Original Crookies</h3>
+          <p data-i18n="sig1Desc">Croissant trifft Cookie: blättrig, goldbraun und mit Schokoladenstücken. Gäste nennen sie ein Muss.</p>
+        </div>
+      </article>
+      <article class="sig-card reveal">
+        <div class="sig-media"><img src="assets/cappuccino-creamy.webp" alt="Cappuccino in einer weissen Tasse mit cremigem Milchschaum auf einem hellen Tresen, im Hintergrund unscharf ein Crookie, warmes Morgenlicht" width="1408" height="1760" loading="lazy"></div>
+        <div class="sig-body">
+          <div class="sig-tags"><span class="tag tag-fav" data-i18n="tagFav">Gäste-Favorit</span></div>
+          <h3 data-i18n="sig2Name">Cappuccino</h3>
+          <p data-i18n="sig2Desc">Cremig und voll im Geschmack, genau so loben ihn unsere Gäste in ihren Bewertungen.</p>
+        </div>
+      </article>
+      <article class="sig-card reveal">
+        <div class="sig-media"><img src="assets/gelato-lulo.webp" alt="Becher mit Gelato, davor eine blass gelb-grüne Kugel tropisches Lulo-Gelato, im Hintergrund unscharf eine unbeschriftete Gelato-Vitrine" width="1408" height="1760" loading="lazy"></div>
+        <div class="sig-body">
+          <div class="sig-tags"><span class="tag tag-tipp" data-i18n="tagTipp">Gäste-Tipp</span></div>
+          <h3 data-i18n="sig3Name">Lulo-Gelato</h3>
+          <p data-i18n="sig3Desc">Tropisch und frisch, mit Limette, Ananas und grünem Apfel. Ein Gast nennt es das einzige Lulo-Gelato der Schweiz.</p>
+        </div>
+      </article>
+      <article class="sig-card reveal">
+        <div class="sig-media"><img src="assets/empanadas-house-sauce.webp" alt="Zwei goldbraun gebackene Empanadas auf einem Teller mit einem kleinen Schälchen Haussauce, im Hintergrund unscharf eine Kaffeetasse" width="1408" height="1760" loading="lazy"></div>
+        <div class="sig-body">
+          <div class="sig-tags"><span class="tag tag-hearty" data-i18n="tagHearty">Herzhaft</span></div>
+          <h3 data-i18n="sig4Name">Empanadas mit Haussauce</h3>
+          <p data-i18n="sig4Desc">Goldbraun gebacken, allen voran die Poulet-Empanada. Die Haussauce dazu nicht auslassen, sagen unsere Gäste.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="sig-more reveal">
+      <h3 data-i18n="sigMoreTitle">Mehr vom Fenster</h3>
+      <ul class="sig-list">
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl1Name">Zimtschnecken</h4><span class="tag tag-fav" data-i18n="tagFav">Gäste-Favorit</span></div>
+          <p data-i18n="sl1Desc">Weich und zimtig, so beliebt, dass sie es in Luzerner Reiseprogramme geschafft haben.</p>
+        </li>
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl2Name">Vanilla Iced Latte</h4></div>
+          <p data-i18n="sl2Desc">Der herausragende Favorit unter den kalten Kaffees, sagen unsere Gäste.</p>
+        </li>
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl3Name">Heisse Schokolade</h4></div>
+          <p data-i18n="sl3Desc">Von Gästen als himmlisch beschrieben, warm und reichhaltig.</p>
+        </li>
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl4Name">Kapello-Sandwiches</h4></div>
+          <p data-i18n="sl4Desc">Frisch und mit Sorgfalt zubereitet, für den kleinen Hunger zwischendurch.</p>
+        </li>
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl5Name">Matcha-Getränke</h4></div>
+          <p data-i18n="sl5Desc">Grüner Matcha, von Gästen immer wieder gelobt.</p>
+        </li>
+        <li>
+          <div class="sig-list-item-top"><h4 data-i18n="sl6Name">Saisonale Neuheiten</h4><span class="tag tag-tipp" data-i18n="tagTipp">Gäste-Tipp</span></div>
+          <p data-i18n="sl6Desc">Jede Saison bringt Elias neue, spannende Kreationen ans Fenster, berichten unsere Gäste.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="section section-bark" id="menu">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="menuTitle">Das Angebot am Fenster</h2>
+      <p class="section-sub section-sub-light" data-i18n="menuSub">Kaffee, Gebäck und Gelato, jeden Morgen am Fenster. Was es genau gibt, wechselt mit der Saison, frag uns einfach am Fenster oder am Telefon.</p>
+    </header>
+
+    <div class="menu-grid">
+      <div class="menu-col reveal">
+        <h3 class="menu-cat" data-i18n="catDrinks">Kaffee und Getränke</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mCapName">Cappuccino</h4><span class="tag tag-fav" data-i18n="tagFav">Gäste-Favorit</span></div>
+            <p data-i18n="mCap">Cremig und voll im Geschmack, von Gästen als erstklassig beschrieben.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mLatteName">Vanilla Iced Latte</h4><span class="tag tag-fav" data-i18n="tagFav">Gäste-Favorit</span></div>
+            <p data-i18n="mLatte">Eiskalt, mit Vanille, der herausragende Favorit unserer Gäste.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mMochaName">Mocha</h4></div>
+            <p data-i18n="mMocha">Kaffee und Schokolade in einer Tasse, warm und schokoladig.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mMatchaName">Matcha</h4></div>
+            <p data-i18n="mMatcha">Matcha-Getränke, von Gästen immer wieder gelobt.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mChocName">Heisse Schokolade</h4></div>
+            <p data-i18n="mChoc">Reichhaltig und warm, von Gästen himmlisch genannt.</p>
+          </li>
+        </ul>
+
+        <h3 class="menu-cat menu-cat-spaced" data-i18n="catGelato">Gelato</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mGelatoName">Gelato des Hauses</h4></div>
+            <p data-i18n="mGelato">Cremiges Gelato, von Gästen für seinen Geschmack gelobt. Die Sorten wechseln mit der Saison.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mLuloName">Lulo-Gelato</h4><span class="tag tag-tipp" data-i18n="tagTipp">Gäste-Tipp</span></div>
+            <p data-i18n="mLulo">Tropische Zitrusfrucht, mit Limette, Ananas und grünem Apfel. Ein Gast nennt es einzigartig in der Schweiz.</p>
+          </li>
+        </ul>
+        <div class="menu-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <p data-i18n="menuNote">Die Preise ergänzen wir auf dieser Karte, sobald sie vom Haus bestätigt sind. Bis dahin frag uns am Fenster oder am Telefon gern nach Preisen und den Sorten des Tages.</p>
+        </div>
+        <a class="btn btn-primary btn-block" href="tel:+41786689999">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-i18n="menuCta">Am Telefon fragen</span>
+        </a>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3 class="menu-cat" data-i18n="catPastry">Aus dem Gebäckfenster</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mCrookieName">Original Crookies</h4><span class="tag tag-orig" data-i18n="tagOriginal">Das Original</span></div>
+            <p data-i18n="mCrookie">Croissant und Cookie in einem, mit Schokoladenstücken.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mCroissantName">Croissants</h4></div>
+            <p data-i18n="mCroissant">Goldbraun, blättrig und frisch.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mCinnName">Zimtschnecken</h4><span class="tag tag-fav" data-i18n="tagFav">Gäste-Favorit</span></div>
+            <p data-i18n="mCinn">Weich, zimtig und bei Gästen wie Reiseführern beliebt.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mEmpName">Empanadas</h4><span class="tag tag-hearty" data-i18n="tagHearty">Herzhaft</span></div>
+            <p data-i18n="mEmp">Goldbraun gebacken und herzhaft.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mChickenName">Poulet-Empanada</h4></div>
+            <p data-i18n="mChicken">Unser Muss laut Gästen, serviert mit der Haussauce des Hauses.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-top"><h4 data-i18n="mKapelloName">Kapello-Sandwiches</h4></div>
+            <p data-i18n="mKapello">Frisch und mit Sorgfalt zubereitet.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="section section-cream" id="story">
+  <div class="wrap story-grid">
+    <div class="story-card reveal">
+      <div class="story-media"><img src="assets/pastry-morning-tray.webp" alt="Morgentablett mit Croissant, Zimtschnecke und einer Tasse heisser Schokolade auf einem kleinen Tisch am Fenster" width="1408" height="1760" loading="lazy"></div>
+      <div class="sunrow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <dl class="fact-list">
+        <div class="fact-row"><dt data-i18n="factOwnerLbl">Inhaber</dt><dd>Elias</dd></div>
+        <div class="fact-row"><dt data-i18n="factHoursLbl">Geöffnet</dt><dd data-i18n="factHoursVal">Nur am Morgen</dd></div>
+        <div class="fact-row"><dt data-i18n="factFormatLbl">Format</dt><dd data-i18n="factFormatVal">Kaffee- und Gebäckfenster</dd></div>
+        <div class="fact-row"><dt data-i18n="factQuarterLbl">Quartier</dt><dd>Hirschmatt-Neustadt</dd></div>
+      </dl>
+      <p class="story-card-note" data-i18n="storyCardNote">Warm, gemütlich und echt: So beschreiben unsere Gäste das Dal Mattino.</p>
+    </div>
+    <div class="story-copy">
+      <h2 class="reveal" data-i18n="storyTitle">Ein Fenster für den Morgen</h2>
+      <p class="reveal" data-i18n="storyP1">Dal Mattino heisst auf Italienisch «vom Morgen», und genau dafür ist das kleine Café an der Hirschmattstrasse 28 da: Es öffnet um 7 Uhr und schliesst um 14 Uhr, der ganze Tag ist der Morgen.</p>
+      <p class="reveal" data-i18n="storyP2">Geführt wird es von Inhaber Elias, der seine Gäste persönlich bedient und für seine Produkte brennt. Gäste beschreiben die Atmosphäre als warm, freundlich und gemütlich, man fühlt sich willkommen, sobald man hereinkommt.</p>
+      <p class="reveal" data-i18n="storyP3">Das Angebot ist klein und eigen: originale Crookies, cremiger Cappuccino, Gelato mit Sorten wie der tropischen Lulo und herzhafte Empanadas. Dazu kommen saisonale Neuheiten und Gelato-Events, die auf Instagram angekündigt werden.</p>
+      <ul class="story-chips reveal">
+        <li data-i18n="chip1">Von Inhaber Elias geführt</li>
+        <li data-i18n="chip2">Nur am Morgen geöffnet</li>
+        <li data-i18n="chip3">Alles auch zum Mitnehmen</li>
+        <li data-i18n="chip4">Gelato-Events auf Instagram</li>
+      </ul>
+      <div class="story-rating reveal">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <p><strong>4.9</strong> <span data-i18n="storyRating">Sterne aus über 350 Google-Bewertungen. Gäste loben vor allem die Crookies, den cremigen Cappuccino und die herzliche Art von Elias.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="section section-paper" id="trust">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="trustTitle">Gut zu wissen, bevor du kommst</h2>
+    </header>
+    <div class="trust-grid">
+      <article class="trust-card reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3 data-i18n="trust1Title">Bewertet mit 4.9 Sternen</h3>
+        <p data-i18n="trust1Desc">Über 350 Google-Bewertungen sprechen für sich: ein kleines Fenster mit einer grossen Fangemeinde in der Neustadt.</p>
+      </article>
+      <article class="trust-card reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <h3 data-i18n="trust2Title">Alles zum Mitnehmen</h3>
+        <p data-i18n="trust2Desc">Kaffee, Gebäck und Gelato gibt es zum Mitnehmen, perfekt für den Weg in die Altstadt, an den See oder auf den Zug.</p>
+      </article>
+      <article class="trust-card reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </div>
+        <h3 data-i18n="trust3Title">Jede Saison etwas Neues</h3>
+        <p data-i18n="trust3Desc">Unsere Gäste berichten: Jede Saison bringt neue, spannende Kreationen ans Fenster. Ein Blick auf Instagram lohnt sich.</p>
+      </article>
+      <article class="trust-card reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        </div>
+        <h3 data-i18n="trust4Title">Persönlich von Elias</h3>
+        <p data-i18n="trust4Desc">Kein anonymer Betrieb: Inhaber Elias ist selbst vor Ort und berät dich gern zu Kaffee, Gebäck und Gelato.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MORNING & TAKE-AWAY ============ -->
+<section class="section section-terra" id="morning">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="morningTitle">Dein Morgen in der Neustadt</h2>
+      <p class="section-sub section-sub-light" data-i18n="morningSub">Dal Mattino ist ein Morgenhaus: Von 7 bis 14 Uhr gibt es Kaffee, Gebäck und Gelato am Fenster, alles auch zum Mitnehmen.</p>
+    </header>
+    <div class="lunch-grid">
+      <article class="lunch-card reveal">
+        <h3 data-i18n="ccTitle">Zum Mitnehmen, so einfach geht es</h3>
+        <ol class="cc-steps">
+          <li>
+            <span class="cc-num">1</span>
+            <div><strong data-i18n="cc1Title">Angebot ansehen</strong><p data-i18n="cc1Desc">Such dir oben aus, worauf du Lust hast, vom Crookie bis zum Lulo-Gelato.</p></div>
+          </li>
+          <li>
+            <span class="cc-num">2</span>
+            <div><strong data-i18n="cc2Title">Ans Fenster kommen</strong><p data-i18n="cc2Desc">Du findest uns an der Hirschmattstrasse 28, mitten in der Neustadt.</p></div>
+          </li>
+          <li>
+            <span class="cc-num">3</span>
+            <div><strong data-i18n="cc3Title">Mitnehmen und geniessen</strong><p data-i18n="cc3Desc">Kaffee, Gebäck oder Gelato in der Hand, und der Luzerner Morgen gehört dir.</p></div>
+          </li>
+        </ol>
+        <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=Hirschmattstrasse%2028%2C%206003%20Luzern" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          <span data-i18n="ccCta">Route planen</span>
+        </a>
+      </article>
+      <article class="lunch-card reveal">
+        <h3 data-i18n="dlTitle">Gut zu wissen am Morgen</h3>
+        <p data-i18n="dlDesc">Geöffnet ist Montag bis Freitag von 7 bis 14 Uhr und am Samstag von 8 bis 14 Uhr, sonntags bleibt das Fenster geschlossen. Gelato-Events und saisonale Neuheiten kündigt Elias auf Instagram an.</p>
+        <div class="dl-actions">
+          <a class="btn btn-light" href="https://www.instagram.com/dalmattino" target="_blank" rel="noopener"><span data-i18n="dlInsta">Auf Instagram folgen</span></a>
+          <a class="btn btn-outline-light" href="tel:+41786689999"><span>+41 78 668 99 99</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="section section-cream" id="visit">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <h2 data-i18n="visitTitle">An der Hirschmattstrasse, wir freuen uns auf dich</h2>
+    </header>
+    <div class="visit-grid">
+      <div class="visit-card reveal">
+        <h3 data-i18n="visitAddrTitle">Adresse und Kontakt</h3>
+        <p class="visit-addr">Dal Mattino<br>Hirschmattstrasse 28<br>6003 Luzern</p>
+        <p class="visit-line"><span data-i18n="visitPhoneLabel">Telefon:</span> <a href="tel:+41786689999">+41 78 668 99 99</a></p>
+        <div class="visit-actions">
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Hirschmattstrasse%2028%2C%206003%20Luzern" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            <span data-i18n="visitDirections">Route planen</span>
+          </a>
+          <a class="btn btn-ghost-dark" href="https://www.instagram.com/dalmattino" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="social-row">
+          <a href="https://www.instagram.com/dalmattino" target="_blank" rel="noopener" aria-label="Instagram Dal Mattino">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+      <div class="visit-card reveal">
+        <h3 data-i18n="visitHoursTitle">Öffnungszeiten</h3>
+        <table class="hours-table">
+          <tbody>
+            <tr><th scope="row" data-i18n="dMonFri">Montag bis Freitag</th><td data-i18n="hMonFri">7:00 bis 14:00</td></tr>
+            <tr><th scope="row" data-i18n="dSat">Samstag</th><td data-i18n="hSat">8:00 bis 14:00</td></tr>
+            <tr><th scope="row" data-i18n="dSun">Sonntag</th><td data-i18n="dClosed">Geschlossen</td></tr>
+          </tbody>
+        </table>
+        <p class="hours-note" data-i18n="hoursNote">Öffnungszeiten gemäss Google-Eintrag. Änderungen vorbehalten.</p>
+        <p class="visit-service" data-i18n="visitService">Ein kleines Fenster für Kaffee, Gebäck und Gelato. Alles gibt es auch zum Mitnehmen.</p>
+      </div>
+      <div class="visit-card reveal">
+        <h3 data-i18n="visitTravelTitle">Anreise</h3>
+        <ul class="travel-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            <p><strong>Neustadt-Route</strong>, <span data-i18n="travelRoute">die Hirschmattstrasse ist Teil der offiziellen Neustadt-Wanderroute, vom Theater Luzern durchs Quartier.</span></p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M16 9h3a1 1 0 0 1 1 1v11"/><path d="M2 21h20"/><path d="M8 7h2"/><path d="M8 11h2"/><path d="M8 15h2"/><path d="M12 7h.01"/><path d="M12 11h.01"/><path d="M12 15h.01"/></svg>
+            <p><strong>Hirschmatt-Neustadt</strong>, <span data-i18n="travelQuarter">ein lebendiges Quartier mit kleinen Läden, Galerien und Kinos, wenige Gehminuten von der Altstadt entfernt.</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-mark">Dal Mattino</p>
+      <p class="footer-sub" data-i18n="footerSub">Café und Gelateria · Hirschmattstrasse 28, 6003 Luzern</p>
+    </div>
+    <div class="footer-links">
+      <a href="tel:+41786689999">+41 78 668 99 99</a>
+      <a href="https://www.instagram.com/dalmattino" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Hirschmattstrasse%2028%2C%206003%20Luzern" target="_blank" rel="noopener">Google Maps</a>
+      <a href="#top" data-i18n="footerTop">Nach oben</a>
+    </div>
+    <p class="footer-note" data-i18n="footerNote">4.9 Sterne aus über 350 Google-Bewertungen, sonntags geschlossen</p>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE BAR ============ -->
+<nav class="mobile-bar" aria-label="Schnellaktionen">
+  <a href="tel:+41786689999">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span data-i18n="barCall">Anrufen</span>
+  </a>
+  <a href="#menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+    <span data-i18n="barMenu">Angebot</span>
+  </a>
+  <a href="https://www.instagram.com/dalmattino" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+    <span>Instagram</span>
+  </a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Hirschmattstrasse%2028%2C%206003%20Luzern" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+    <span data-i18n="barDir">Route</span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
